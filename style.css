@@ -84,7 +84,6 @@ body {
 
 .game-container {
     background: white;
-    border-radius: 28px;
     padding: 30px;
     max-width: 850px;
     width: 100%;
@@ -371,6 +370,7 @@ input[type="text"]:focus {
     font-size: 0.9rem;
 }
 
+
 /* Responsive */
 @media (max-width: 768px) {
     .game-page {
@@ -406,8 +406,10 @@ input[type="text"]:focus {
     }
     
     .hint-btn {
-        width: 100%;
+        width: 90px;
         justify-content: center;
+        padding: 4px 8px;
+        font-size: 0.65rem;
     }
     
     .game-stats {
