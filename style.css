@@ -5,7 +5,7 @@
 }
 
 body {
-    background: white;
+    background: #ffffff;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
     min-height: 100vh;
 }
@@ -63,7 +63,7 @@ body {
 }
 
 .lang-btn.java { background: linear-gradient(135deg, #ea7f15 0%, #f20b2a 100%); }
-.lang-btn.csharp { background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); }
+.lang-btn.csharp { background: linear-gradient(135deg, #9b59b6 0%, #8525ad 100%); }
 .lang-btn.web { background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); }
 
 .lang-btn:hover {
@@ -79,7 +79,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 40px 20px;
+  
 }
 
 .game-container {
@@ -384,7 +384,7 @@ input[type="text"]:focus {
 
 @media (max-width: 600px) {
     .game-page {
-        padding: 20px 16px;
+        padding: 2px 1px;
     }
     
     .game-container {
