@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Finish the Code Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div class="landing-page" id="landingPage">
+        <div class="landing-container">
+            <h1>Finish the Code Game</h1>
+            <p>Welcome to the Finish the Code Game!<br>Enjoy the game!</p>
+
+            <div class="language-cards">
+                <button class="lang-btn java" id="java">Java Language</button>
+                <button class="lang-btn csharp" id="csharp">C# Language</button>
+                <button class="lang-btn web" id="web">Web Development</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Page -->
+    <div class="game-page" id="gamePage" style="display: none;">
+        <div class="game-container">
+            <!-- Back Button -->
+            <button class="back-btn" id="backMenu">← Back to Menu</button>
+            
+            <!-- Language Badge -->
+            <div class="language-badge" id="languageBadge">Java</div>
+            
+            <!-- Title -->
+            <h1 class="game-title">Finish the Code</h1>
+
+            <!-- Level Selector Section -->
+            <div class="level-section">
+                <label class="level-label">Select Difficulty Level:</label>
+                <select class="level-selector" id="levelSelector">
+                    <option value="easy">Easy - Basic Terms</option>
+                    <option value="medium">Medium - Programming Concepts</option>
+                    <option value="hard">Hard - Advanced Concepts</option>
+                </select>
+            </div>
+
+            <!-- Game Stats -->
+            <div class="game-stats">
+                <div class="question-number" id="questionDisplay">Question 1/5</div>
+                <div class="score" id="scoreDisplay">Score: 0</div>
+            </div>
+            
+            <hr>
+            
+            <!-- Hint Button -->
+            <button class="hint-btn" id="hintBtn">
+                Hint
+                <span class="hint-count" id="hintCount">3</span>
+            </button>
+            
+            <!-- Code Container -->
+            <div class="code-container" id="codeDisplay">
+                // Select a language to start
+            </div>
+
+            <!-- Divider -->
+            <hr class="divider">
+
+            <!-- Input Section -->
+            <div class="input-section">
+                <label>Input the missing code here:</label>
+                <div class="input-wrapper">
+                    <input type="text" id="codeInput" placeholder="Type the missing code...">
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button class="btn submit-btn" id="submit">Submit Answer</button>
+                <button class="btn reset-btn" id="reset">Reset Game</button>
+            </div>
+            
+            <!-- Message and Hint Areas -->
+            <div id="messageArea"></div>
+            <div id="hintArea"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
